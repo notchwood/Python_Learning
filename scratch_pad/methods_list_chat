@@ -1,0 +1,26 @@
+print("Here is a list of methods, listed in z-order")
+CONST = 30
+names = dir(str)
+num_elem = len(names)
+
+x = 0
+y = 1
+
+# Run the loop manually based on our counters, not a 'for' loop
+while x < num_elem:
+    col1 = names[x]
+    #temp = len(col1)
+    repeat = CONST - len(col1)
+    spacer = " " * repeat  # Using spaces instead of pipes for a cleaner look
+    
+    # Check if there's a matching second column item
+    if y < num_elem:
+        col2 = names[y]
+        print(f"{col1}{spacer}{col2}")
+    else:
+        # If there's an odd number of items, just print the last left column item
+        print(f"{col1}")
+        
+    # Advance to the next pair
+    x += 2
+    y += 2
