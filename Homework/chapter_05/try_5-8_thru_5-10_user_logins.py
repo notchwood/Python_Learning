@@ -1,4 +1,3 @@
-users = [] # create a list to store the users
 lc_users = [] # create a new list to store the lower case users
 user = [] # used as an iteratorator through users tuple and store them in the lc_users
 users = ("admin", "mike", "denise") # create a immutable tuple to store the users
@@ -17,8 +16,8 @@ while i < TRIES:
     i += 1
     if worker_name not in lc_users and j > 1:
         j = j - 1
-        # This block is for demonstration purpose only. 
-        # it would not be a good idea in the real world..
+        # The following block is for demonstration purpose only. 
+        # it would not be a good idea in the real world!!!
         print("Please try using one of following user names.")
         for lc_user in lc_users[:]:
             print(lc_user.title())
@@ -27,8 +26,8 @@ while i < TRIES:
         if j == 1:
             print("You have exceeded the maximum number of tries." 
             " Please call your I.T admin!")
-            break # I learned that "break" can only be used in "if" and "while" loops.
-                  # but not "for" loops
+            break # "break" can only be used in"if" statement lives nested 
+                    #inside a while or a "for" loop.
     else:
         i = TRIES + 1 
         if worker_name == "admin":
