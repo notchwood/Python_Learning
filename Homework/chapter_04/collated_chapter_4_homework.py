@@ -1,4 +1,4 @@
-import septor ; import random
+import Homework.chapter_04.septor as septor ; import random
 
 sept_line = septor.prnt_ln(45, "%")
 

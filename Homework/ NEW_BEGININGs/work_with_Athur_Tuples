@@ -1,0 +1,7 @@
+system_core = ("ryzen_9", 'rtx_5060ti', "64gb_ram")
+
+print(system_core[0])
+print(system_core[-1])
+print(system_core[2])
+
+system_core[1] = 'rtx_5090'

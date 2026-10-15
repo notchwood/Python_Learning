@@ -1,0 +1,112 @@
+
+
+print("\n" * 2)
+
+glossary = {
+    "len()" : "(1) A function used to get the length of string, data structures i.e. tuple, list, dict. and sets?" ,
+    "sub" : "(2) Is a way to refer to an index of an item in list, and dict. i.e. give and example",
+    "Annotation" : "(3) A type of variable that indicate the type of variable being use, simular to a \n\tcomment"
+        " about variable type cast i.e.  var is_red: boolean ",
+    "Comprehension" : "(4) A concise syntax for constructing lists, sets, or dictionaries.", 
+    "Docstring" : "(5) Is a sequence of word to descripe a block of code i.e. function that documents the functions purpose.\n\t A large commented section describing a block of code using 3 quotation\n\t marks at the begining and at the end of paragraph",
+}
+
+# word, example = glossary
+print(f"All key-value pairs for dictionary glossary:\n\t{glossary}")
+
+word = glossary.keys()
+print(f"\nThe keys for dictionary glossary are:\n\t{word}\n")
+
+# word = ""
+ 
+# example = "A function used to get the length of string, data structures i.e. tuple, list, dict. and sets?"
+# len_key_word = len(glossary)
+# print(f"The total amount of key-value pairs in the dictionary glossary is ({len_key_word})\n")
+
+for key_word in glossary:
+    example = glossary[key_word]
+    print(glossary[key_word])
+    print("\n" * 1)
+
+    
+
+
+# glossary = {word: example}
+
+# # print(glossary)
+
+# find the boolean value of the key
+# print(f"glossary["sub"]\n") 
+
+# b_exist = "sub" in glossary
+# if b_exist:
+#     print(f"Testing if the key 'sub' does exist in dictionary and returns {b_exist}\n")
+
+# b_exist = "dog" in glossary
+# if not b_exist:
+#     print(f"Testing if the key 'dog' does NOT exist in dictionary and returns {b_exist}\n")
+
+# # # .get() is used to catch non-existing keys when search for a by KEY only
+# # # it catch the error gracefully and allows custom error msg to be an outputed stream
+# print(f"Testing with the '.get' returns an ambiguios 'None' w/out a msg return an error msg.\n{glossary.get('dog')}\n")
+# # print("\n")
+
+# print(f"Testing with the '.get' returns an error with msg\n{glossary.get('dog'),'Error: no key (string) found in Dictionary.'}" )
+ 
+ 
+# IF THE KEY, VALUE DOESN'T EXSIST in the dictionary 
+# the key, value pair is ADDED to the dictionay
+# OR
+# if the KEY DOES EXIST - then only the value is updated
+
+# #entery added
+# word_2 = "pep_8"
+# example_2 = "(6)recommendation that you use four spaces per indentation level..."
+# print(glossary.update({word_2 : example_2}))
+
+# entery updated
+word_2 = "pep_8"
+example_2 = "(6)recommendation that you use four spaces per indentation level, but you can use the TAB key, being sure that you IDE can conver the Tab can convert to four spaces."
+print(glossary.update({word_2 : example_2}))
+
+for key_word in glossary:
+    example = glossary[key_word]
+    print(glossary[key_word]) # the example var can be used to subsitute the key_word var
+    print("\n" * 1)
+# # deleting dictionary item
+# del glossary[word_2]
+
+#for word in glossary:
+print(glossary)
+
+
+
+
+
+################################################
+
+# print("*** LOOPs *** \n")
+#print(glossary)
+# for terms in glossary.keys(): 
+#     print(f"{terms} = {glossary[terms]}")
+
+# # to get all the VALUES in the dict. use [keys] 
+# for key_word in glossary:
+#     print(glossary[key_word]) # notice the square brackets around the key"s  -name- "the sub of glossary"
+
+# print all values in dictionary with .keys()
+# for terms in glossary.keys():
+#     print(glossary[terms])
+
+# print all values in dictionary without .keys()
+# for terms in glossary: # default statement
+#     print(glossary[terms])
+
+# print all keys in dictionary
+# for word in glossary:
+#     print(word)
+
+# print all values in dictionay
+# for word in glossary.values():
+#     print(word)
+

@@ -1,0 +1,48 @@
+name = ["DeNise MacKinnon", "Mike MacKinnon"]
+
+# first = "Denise"
+# last = "MacKinnon"
+# print(name.count("M"))
+# print(name)
+# full = f"{first} {last}"
+# print(full)
+# print(first +" "+ last)
+# print(f"{first}{last}")
+
+# name = "so  you want to  Be in a rockin roll band  "
+# print(name.rstrip())
+# print(name.strip())
+
+# removed = f"http://google.com"
+# print(removed.removeprefix('http://'))
+# prefix = removed.removeprefix('http://')
+# print(prefix)
+
+# first_num = 0
+# second_num = 2
+
+# number = 2
+# bicycles = ["trek" , "cannondale" , "redline" , "specialied"]
+# print(bicycles[first_num : number])
+
+freinds = ['tracy', 'mark', 'joe', 'billy'] 
+#i = 0
+# while i < 4:
+#     print(freinds[i].swapcase())
+#     i += 1
+# for i in range (4):
+#     print(freinds[i].swapcase())
+#     i += 1
+family = [freinds[i].swapcase() for i in range (4)]
+# you can't do this -> [print(f"freinds[{i}].swapcase() for i in range (4)] i =0")]   
+
+# a list of letters in a word (str)
+#word = "bingo"
+#print(word[i])
+# for i in range(0,5):
+#     print(word[i].capitalize())
+
+freinds.insert(3, 'jack')
+print(freinds)
+freinds.append('jack')
+print(freinds)

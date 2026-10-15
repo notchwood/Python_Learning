@@ -1,0 +1,21 @@
+racers = {
+    'alice': 1,
+    'bob': 2,
+    'charlie': 3,
+    'david': 4,
+    'eva': 5,
+}
+
+
+def label_position(position):
+    if 10 < position % 100 < 14:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}.get(position % 10, "th")
+
+    return f"{position}{suffix}"
+
+
+for rider, position in racers.items():
+    place = label_position(position)
+    print(f"{rider} finished {place}")
