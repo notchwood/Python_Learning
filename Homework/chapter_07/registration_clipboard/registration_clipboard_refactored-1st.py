@@ -39,7 +39,9 @@ for racer, speed in speeds.items():
     speed_length: str = len(str(speed))
     max_str_len = max(len(speed) for speed in speeds)
 
-    dash_line_len = (COLUME_WIDTH - speed_length)
+    #dash_line_len = (COLUME_WIDTH - speed_length)
+    dash_line_len = (COLUME_WIDTH)
+
     dashes= "-" * dash_line_len + ">"
 
     print(f"{speed:>3} mph {dashes} {racer.title()}") 
