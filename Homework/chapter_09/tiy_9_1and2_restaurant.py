@@ -11,11 +11,11 @@ class Restaurant:
 
     def describe_restaurant(self):
         """Describe new restaurant"""
-        print(f"The new restaurant, {self.restaurant_name} serves {self.cuisine_type}")
+        print(f"The new restaurant, {self.restaurant_name} serves {self.cuisine_type} cuisine.")
 
     def open_restaurant (self):
         """Print that restaurant is now open"""
-        print(f"{self.restaurant_name} is now open")
+        print(f"{self.restaurant_name} is now open for business")
 
 # Creating 3 instance (new object)
 rest_1 = Restaurant("Wildwood", "Steak-house")
