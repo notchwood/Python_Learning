@@ -1,4 +1,3 @@
-# 
 # tiy_9_4_number_served.py
 
 class Restaurant:
@@ -30,7 +29,7 @@ class Restaurant:
         """example of augmented assignment"""
         self.count_served -= 3
 
-    def reset_party_number(self,change_seating):
+    def reset_party_number(self, change_seating):
         """just having pure fun w/ this"""
         self.count_served += change_seating 
 
