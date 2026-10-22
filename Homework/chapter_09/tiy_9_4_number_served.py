@@ -59,3 +59,7 @@ rest_1.set_number_served()
 # combining rest.decrease_party and replace_num_seated
 rest_1.reset_party_number(-2)
 rest_1.set_number_served()
+
+####################################
+print(rest_1)
+print(type(rest_1))
