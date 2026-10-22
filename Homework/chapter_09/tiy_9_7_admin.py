@@ -1,3 +1,6 @@
+# tiy_9_7_admin.py
+# note: main class routine from exercise 9-5 pg 167
+
 class Users:
     """Modeling Users with personal attributes"""
     
@@ -37,31 +40,27 @@ class Users:
         print(f"{self.first_name} {self.last_name} has attempted to login {self.login_attempts} time{self.add_plural}") 
 
 class Admin(Users):
+    """Admin subclass """
     def __init__ (self, first_name, last_name, job, building, id_badge_num ):
         super(). __init__ (first_name, last_name, job, building, id_badge_num )
         self.privileges = ["   can add post", "   can delete post", "   can ban users", "   can suspend accounts"]
    
     def show_privileges(self):
-        """"""
+        """Method used to give admin privileges"""
         print(f"The following are privileges granted to {self.first_name}:")
         for privilege in self.privileges:
             print(privilege)
-        
-
-
-# Creating 1 instance (new object)
+    
+# Creating instance of users (new object)
 person_1 = Users("Mike", "Jones", "Sr. SQE", "green", "2000" )
 person_2 = Users("Paul", "Smith", "Vice President", "blue", "1000" )
 person_3 = Users("Denise", "Peterson", "Marketing", "brown", "5000" )
 person_4 = Admin("Arthur", "", "Admin", "infinity", "1")
-# person_4 = Users("Arthur", "", "Admin", "infinity", "1")
 
 # print person's name and attributes
 person_4.describe_user()
 person_4.greet_user()
 person_4.show_privileges()
-
-
 
 # print person's name and attributes
 print()
