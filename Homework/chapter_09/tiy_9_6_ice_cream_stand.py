@@ -17,9 +17,9 @@ class Restaurant:
         print(f"{self.restaurant_name} is now open for business")
 
 class IceCreamStand(Restaurant):
+    """Adding subclass of parent class Restaurant"""
     def __init__ (self, restaurant_name, cuisine_type):
         super(). __init__ (restaurant_name, cuisine_type)
-        
         self.flavors = ["  chocolate", "  rocky road", "  vanilla", "  strawberry", "  cookie dough"]
 
     def print_flavors(self):
@@ -34,6 +34,7 @@ rest_2 = Restaurant("Chilly's", "Mex-American")
 rest_3 = Restaurant("McDonalds", "Fast-Food")
 rest_4_ics = IceCreamStand("Friendly's", "Iced-Cream")
 
+# restaurant Friendly's - attributes and methods
 print(rest_4_ics.restaurant_name)
 print(rest_4_ics.cuisine_type)
 rest_4_ics.open_restaurant()
