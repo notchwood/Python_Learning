@@ -21,27 +21,36 @@ class Users:
         """Greeting each user by name"""
         print(f"Hello {self.first_name}")
 
-class Admin(Users):
-    """Admin subclass """
-    def __init__ (self, first_name, last_name, job, building, id_badge_num ):
-        super(). __init__ (first_name, last_name, job, building, id_badge_num )
          
-class Privileges(Admin):
-    """ sub-subclass """
-    def __init__ (self, first_name, last_name, job, building, id_badge_num ):
-        super(). __init__ (first_name, last_name, job, building, id_badge_num )
+class Privileges:
+    """  """
+    def __init__ (self):
+        
         self.privileges = ["   can add post", "   can delete post", "   can ban users", "   can suspend accounts"]
     
     def show_privileges(self):
         """Method used to give admin privileges"""
-        print(f"The following are privileges granted to {self.first_name}:")
+        #print(f"The following are privileges granted to {self.first_name}:")
         for privilege in self.privileges:
             print(privilege)
 
+class Admin(Users):
+    """Admin subclass """
+    def __init__ (self, first_name, last_name, job, building, id_badge_num ):
+        super(). __init__ (first_name, last_name, job, building, id_badge_num )
+
+        self.privileges = Privileges()
+
 # Creating instance of admin (new object)
-person_4 = Privileges("Arthur", "", "Admin", "infinity", "1")
+person_4 = Admin("Arthur", "", "Admin", "infinity", "1")
 
 # print person's name and attributes
 person_4.describe_user()
 person_4.greet_user()
-person_4.show_privileges()
+print(f"The following are privileges granted to {person_4.first_name}:")
+
+person_4.privileges.show_privileges()
+
+# this line is for me to see what in the var person_4
+print()
+print(person_4) 

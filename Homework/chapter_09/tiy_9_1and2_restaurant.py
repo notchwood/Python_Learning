@@ -39,5 +39,3 @@ print(rest_3.restaurant_name)
 print(rest_3.cuisine_type)
 rest_3.open_restaurant()
 rest_3.describe_restaurant()
-
-
