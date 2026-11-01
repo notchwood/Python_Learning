@@ -1,0 +1,5 @@
+I have learned what the difference of all the data structures.
+Tuples
+List
+Dictionaries
+and a little about sets
