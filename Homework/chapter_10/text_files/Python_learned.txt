@@ -3,3 +3,4 @@ Tuples
 List
 Dictionaries
 and a little about sets
+I like to learn programming with Python.
